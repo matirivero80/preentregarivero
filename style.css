@@ -1,0 +1,223 @@
+*{padding: 0;
+margin: 0;}
+
+    
+
+body{background-color: burlywood;
+}
+.titulo{background-color:brown;
+color: black;
+width: 130px;
+font-size:80px;
+text-align: center;
+margin-left: 145px;
+}
+
+
+header{
+    height: 160px;
+}
+
+
+.amoblamientos{
+    width: 100%;
+    font-size: 20px;
+    
+    
+}
+
+
+nav ul li {float: right;
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+h2{color: blue;
+    font-size: 40px;
+    margin-left: 150px;
+
+}
+
+p{font-size: 20px;
+    margin-left: 150px;
+
+}
+
+ .galeria{color:brown;
+font-size: 40px;
+padding: 20px;
+}   
+
+.contenedor{
+    height: 1200px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    margin-left: 100px;
+
+}
+
+.foto{
+    background-size: cover;
+    background-position: center;
+    border: 5px solid ;
+}
+
+.foto1{
+    background-image: url(./imagen/chair-2587847_1280.jpg);
+}
+
+.foto2{
+    background-image: url(./imagen/kitchen-1940176_1280.jpg);
+}
+
+.foto3{
+    background-image: url(./imagen/kitchen-8195976_1280.jpg);
+}
+
+.foto4{
+    background-image: url(./imagen/WhatsApp\ Image\ 2023-07-05\ at\ 23.31.59.jpeg);
+}
+
+.foto5{
+    background-image: url(./imagen/interior-3534120_1280.jpg);
+}
+
+.foto6{
+    background-image: url(./imagen/picnic-table-4063311_1280.png);
+}
+
+
+
+
+form{
+    padding: 20px;
+height: 35px;
+width: 50px;
+}
+h4{
+    color: chocolate;
+font-size: 60px;
+background-color: black;}
+
+
+
+
+.navbar-brand{
+    font-size: 20px;
+    color: black; 
+    
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+    
+
+ a:hover{color: black;}
+
+
+ footer{
+    height: 170px;
+}
+
+h3 {font-weight: bolder;
+padding: 30px;
+font-size: 25px;
+text-decoration-line: underline;
+margin-left: 130px;
+}
+
+.iconos{
+    margin-left: 200px;
+    padding:10px;
+    font-size: 30px;
+    color: brown;          
+    }
+
+.home1{padding: 50px;
+height: auto;
+width: 300px;}
+
+.home2{padding: 50px;
+height: auto;
+width: 300px;}
+
+.lorem{padding: 20px
+}
+.nuevos{    
+    margin-left: 150px;    
+    margin-top: 60px;
+    width: 70%;
+}
+.nuevos2{
+    width: 70%;
+    margin-left: 150px;
+}
+
+.nuevos3{
+    width: 70%;
+    margin-left: 150px;
+}
+
+.banner{    
+    background-image: url(./imagen/counter-576093_1280.png);
+    background-size: cover;
+    background-position: center;
+    margin: 300px;
+    height: 300px;
+    
+}
+.index{
+    font-size: 30px;
+    color:white;
+    margin-left: 130px;      
+
+}
+
+.banner2{
+    background-image: url(./imagen/dresser-576043_1280.png);
+    background-size: cover;
+    background-position: center;
+    margin: 300px;
+    height: 600px;
+}
+.banner3{
+    background-image: url(./imagen/table-575916_1280.png);
+    background-size: cover;
+    background-position: center;
+    margin: 300px;
+    height: 300px;
+
+}
+@media only screen and (min-width:320px){
+    .iconos{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width:700px){
+    .iconos{
+        font-size: 30px;
+    }
+}@media only screen and (max-width:1120px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,200px);
+    }
+}
+@media only screen and (max-width:320px){
+    .contenedor{
+        grid-template-areas: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+}
+
