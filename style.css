@@ -4,13 +4,16 @@ margin: 0;}
     
 
 body{background-color: burlywood;
+    width: 100vw;
+    overflow-x: hidden;
+
 }
 .titulo{background-color:brown;
 color: black;
 width: 130px;
 font-size:80px;
 text-align: center;
-margin-left: 145px;
+margin-left: 45%;
 }
 
 
@@ -22,12 +25,13 @@ header{
 .amoblamientos{
     width: 100%;
     font-size: 20px;
+    margin-left: 45%;
     
     
 }
 
 
-nav ul li {float: right;
+nav ul li {float: center;
     list-style: none;
     display: inline-block;
     font-size: 25px;
@@ -37,19 +41,30 @@ nav ul li {float: right;
     
 }
 h2{color: blue;
-    font-size: 40px;
-    margin-left: 150px;
+    font-size: 40px;    
 
+}
+.quienes{
+    padding-top: 65px;
 }
 
 p{font-size: 20px;
-    margin-left: 150px;
-
+    width: 90%;
+   
 }
 
+   
+    
+
+
+
+
+
  .galeria{color:brown;
-font-size: 40px;
+font-size: 35px;
 padding: 20px;
+margin-left: 30%;
+
 }   
 
 .contenedor{
@@ -58,7 +73,8 @@ padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 200px);
-    margin-left: 100px;
+    margin-left: 10%;
+ 
 
 }
 
@@ -101,18 +117,24 @@ height: 35px;
 width: 50px;
 }
 h4{
-    color: chocolate;
+    color:black;
 font-size: 60px;
-background-color: black;}
+margin-left: 30%;
+text-shadow: 5px 5px orangered;
+padding-top: 60px;
+}
 
 
 
 
 .navbar-brand{
     font-size: 20px;
-    color: black; 
+    color: black;    
     
 }
+
+
+
 
 .collapse{
     display: flex;
@@ -134,11 +156,11 @@ h3 {font-weight: bolder;
 padding: 30px;
 font-size: 25px;
 text-decoration-line: underline;
-margin-left: 130px;
+margin-left: 10%;
 }
 
 .iconos{
-    margin-left: 200px;
+    margin-left: 15%;
     padding:10px;
     font-size: 30px;
     color: brown;          
@@ -155,18 +177,18 @@ width: 300px;}
 .lorem{padding: 20px
 }
 .nuevos{    
-    margin-left: 150px;    
+    margin-left: 15%;    
     margin-top: 60px;
     width: 70%;
 }
 .nuevos2{
     width: 70%;
-    margin-left: 150px;
+    margin-left: 15%;
 }
 
 .nuevos3{
     width: 70%;
-    margin-left: 150px;
+    margin-left: 15%;
 }
 
 .banner{    
@@ -175,6 +197,7 @@ width: 300px;}
     background-position: center;
     margin: 300px;
     height: 300px;
+    width: 100vh;
     
 }
 .index{
@@ -190,6 +213,7 @@ width: 300px;}
     background-position: center;
     margin: 300px;
     height: 600px;
+    width: 100vh;
 }
 .banner3{
     background-image: url(./imagen/table-575916_1280.png);
@@ -197,27 +221,31 @@ width: 300px;}
     background-position: center;
     margin: 300px;
     height: 300px;
+    width: 100vh;
 
 }
-@media only screen and (min-width:320px){
+@media only screen and (max-width:480px){
     .iconos{
         font-size: 12px;
     }
-}
-@media only screen and (min-width:700px){
-    .iconos{
-        font-size: 30px;
+    nav ul li{
+        font-size: 15px;
     }
-}@media only screen and (max-width:1120px){
+    p{font-size: 10px;}
+    h2{font-size: 15px;}
+    
+}
+/* /* /* @media only screen and (min-width:700px){
+    .iconos{
+        font-size: 30px; */
+
+
+
+@media only screen and (max-width:480px){
     .contenedor{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,200px);
     }
 }
-@media only screen and (max-width:320px){
-    .contenedor{
-        grid-template-areas: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 200px);
-    }
-}
+
 
